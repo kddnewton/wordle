@@ -73,3 +73,12 @@ workers.map(&:join)
 # to each word. Ideally all of the numbers would be 5 or below (the number of
 # actual guesses you get).
 p results.sort.to_h
+
+# Get the score of the results, which is 10 points for every word within 3
+# guesses, 5 points for every word guessed within 6 guesses, and no points for
+# any other words.
+score =
+  (results[1] + results[2] + results[3]) * 10 +
+  (results[4] + results[5] + results[6]) * 5
+
+p score
