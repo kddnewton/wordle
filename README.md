@@ -4,7 +4,7 @@ A wordle solver, written in Ruby.
 
 ## Getting started
 
-To start the program, run:
+To start the program, run (with Ruby 3.1 or greater):
 
 ```sh
 ruby wordle.rb
